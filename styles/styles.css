@@ -1,0 +1,320 @@
+/* ibm-plex-sans-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/ibm-plex-sans-v18-cyrillic_latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/ibm-plex-sans-v18-cyrillic_latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* ibm-plex-sans-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/ibm-plex-sans-v18-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/ibm-plex-sans-v18-cyrillic_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-cyrillic_latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-v30-cyrillic_latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Common */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #290636;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 514px;
+  padding: 24px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #fff;
+  border: 4px solid #4B0A64;
+  border-radius: 5px;
+  background-color: #4B0A64;
+  text-decoration: none;
+}
+
+.btn-transparent {
+  background-color: rgba(0, 0, 0, 0);
+  color: #290636;
+}
+
+/* Header */
+.header {
+  padding: 40px 0;
+  color: #fff;
+  background-color:  #290636;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 36px;
+  line-height: 47px;
+  font-weight: 500;
+  color: #fff;
+  /* Как альтернатива - ссылка будет наследовать цвет: */
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+.nav ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav li {
+  margin-left: 80px;
+}
+
+.nav a {
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* Promo */
+.promo {
+  padding: 77px 0 150px;
+  background-color: rgba(75, 10, 100, .03);
+}
+
+.promo-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+
+.promo-visual {
+  flex-shrink: 0;
+  flex-basis: 41.66%;
+  padding-right: 15px;
+}
+
+.promo-content {
+  flex-shrink: 0;
+  flex-basis: 58.33%;
+  padding-left: 15px;
+}
+
+.promo-title {
+  /* Можно не писать насыщеннось - заголовки по умолчанию 700 */
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 86px;
+}
+
+.promo-desc {
+  font-size: 28px;
+  line-height: 36px;
+  opacity: .7;
+}
+
+.promo-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 136px;
+}
+
+.promo-price {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 68px;
+}
+
+/* Lead */
+.lead {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(75, 10, 100, .5);
+  background-image: url('../images/bg-lead.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.lead-fade {
+  padding: 230px 0;
+  background-color: rgba(41, 6, 54, 0.3);
+}
+
+.lead-title {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 83px;
+}
+
+.lead-text {
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+/* Options */
+.options {
+  padding: 150px 0;
+  background-color: rgba(75, 10, 100, .03);
+}
+
+.options-hidden {
+  display: none;
+}
+
+.options-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -15px;
+  list-style: none;
+}
+
+.options-item {
+  flex-basis: 50%;
+  padding: 15px;
+  /* border: 1px solid #000; */
+}
+
+.options-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 50px 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid rgba(12, 0, 147, 0.1);
+  box-shadow: 0px 0px 30px rgba(12, 0, 147, 0.1);
+}
+
+.options-title {
+  margin-top: 0;
+  margin-bottom: 48px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 62px;
+}
+
+.options-text {
+  margin: 0;
+  font-size: 32px;
+  line-height: 42px;
+  opacity: 0.6;
+}
+
+/* Order */
+.order {
+  text-align: center;
+  background-image: url('../images/bg-order.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.order-fade {
+  padding: 230px 0;
+  background-color: rgba(255, 255, 255, .5);
+}
+
+.order-text {
+  margin-top: 0;
+  margin-bottom: 60px;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+/* Footer */
+.footer {
+  padding: 42px 0;
+  color: #fff;
+  background-color: #290636;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 18px;
+  line-height: 21px;
+  opacity: .8;
+}
+
+/* Social */
+.social {
+  display: flex;
+  margin: 0;
+  list-style: none;
+}
+
+.social-item {
+  margin-left: 15px;
+}
+
+.social-link {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
